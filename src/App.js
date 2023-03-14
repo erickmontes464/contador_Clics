@@ -10,11 +10,11 @@ function App() {
 
   const manejarClic = () =>{
     setNumClics(numClics + 1);
-  }
+  };
 
   const reiniciarContador = () => {
     setNumClics(0);
-  }
+  };
 
   return (
     <div className="App">
@@ -28,13 +28,11 @@ function App() {
         <Boton 
         texto = 'Clic'
         esBotonDeClic = {true}
-        manejarClic={manejarClic}
-        />
+        manejarClic={manejarClic} />
         <Boton 
           texto='Reiniciar'
           esBotonDeClic={false}
-          manejarClic={reiniciarContador}
-        />
+          manejarClic={reiniciarContador} />
       </div>
     </div>
   );
